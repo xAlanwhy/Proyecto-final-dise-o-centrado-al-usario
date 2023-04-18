@@ -1,0 +1,44 @@
+﻿@model l.Models.datos
+@{
+    ViewBag.Title = "resultado";
+}
+
+<center> <h2>Solicitud Enviada!</h2>  </center>
+
+
+<h4>
+
+
+
+
+    <center>
+        <label>    NOMBRE =@Model.nombre   </label><br /> <br />
+        <label>    APELLIDO =@Model.apellido </label> <br /><br />
+        <label>    CEDULA =@Model.cedula </label> <br /><br />
+        <label>    TELEFONO =@Model.telefono </label> <br /><br />
+
+        <label>    CORREO =@Model.correo</label> <br /><br />
+
+
+
+
+
+
+        <img src=" @Url.Action("ProcesaFoto", new {foto= ViewBag.picture })" width="300" height="300" /><br /> <br />
+
+        <a href="form" class="btn btn-primary">REGRESAR</a>     <br />
+
+        <a href="form2" class="btn btn-primary">Consultar</a>
+
+
+    </center>
+
+</h4> 
+ 
+ 
+
+
+
+
+ 
+

@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "form";
+}
+
+<body background="~/fotos/santo.jpeg" style="background-repeat: no-repeat; background-size: 100% 100%;"  >
+    <center>
+        <h2>Mejorando La Ciudad De Santo Domingo</h2>
+        <form method="post" action="resultado" enctype="multipart/form-data">
+
+
+            
+
+
+            <label>Nombre: <input type="text" class="form-control" placeholder="Ingresar Nombre" name="nombre" value=" " required="" />  </label><br />
+
+            
+
+
+            <label>Apellido:  <input type="text" class="form-control" placeholder="Ingresar Nombre" name="apellido" value=" " required="" />  </label><br />
+
+            <label>Cedula:  <input type="number" class="form-control" placeholder="Ingresar Cedula" name="cedula" value=" " required="" />  </label><br />
+
+            <label>Telefono: <input type="text" class="form-control" placeholder="Ingresar Telefono" name="telefono" value=" " required="" />  </label><br />
+
+
+
+            <label>Correo Electronico: <input type="text" class="form-control" placeholder="Ingresar Nombre" name="correo" value=" " required="" />  </label><br /> 
+
+            <label>Direccion de la calle : <input type="text" class="form-control" placeholder="Ingresar Nombre" name="correo" value=" " required="" />  </label><br />
+
+
+            <label class="form-label" required="">Usted Ha Reportado Antes?  :</label><br />
+            <select class="form-select" name="genero">
+                <option>Si</option>
+                <BR />
+                <option>No</option>
+                <br />
+
+
+
+            </select><br />
+
+
+
+            <br>
+            <br>
+
+
+
+
+
+            <label>Que tiempo lleva el deterioro de la calle?</label><br />
+
+            <div class="form-check">
+
+                <input type="radio" class="form-check-input" id="radio1" name="opcion1" value="6 meses">
+                <label class="form-check-label" for="radio1">6 Meses</label> <br />
+
+                <input type="radio" class="form-check-input" id="radio2" name="opcion1" value="1 año">
+                <label class="form-check-label" for="radio2">1 año</label><br />
+
+                <input type="radio" class="form-check-input" id="radio3" name="opcion1" value="2 años ">
+                <label class="form-check-label">2 años</label><br />
+
+                <input type="radio" class="form-check-input" id="radio4" name="opcion1" value="Más de 5 años ">
+                <label class="form-check-label">Mas de 5 años</label><br />
+
+            </div> <br />
+
+
+            <div class="container">
+
+
+                <label>Agregue Una Imagen De la Calle:</label>
+                <input type="file" name="foto" value="Subir Foto" class="btn" />
+
+
+            </div> <br />
+
+
+
+
+
+
+
+
+
+
+
+
+            <button type="submit" class="btn btn-primary" value="Enviar">ENVIAR   </button><br /><br />
+
+            <a href="Index" class="btn btn-primary">Regresar</a>
+
+
+
+
+        </form>
+        </center>
+</body>
